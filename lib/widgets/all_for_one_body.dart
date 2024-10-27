@@ -114,8 +114,8 @@ class _AllForOneBodyState extends State<AllForOneBody> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('No Data Found'),
-          content: Text('No data found for the input: $title'),
+          title: const Text('FSL not Found!'),
+          content: Text('Would you like to spell it out?: $title'),
           actions: <Widget>[
             TextButton(
               child: const Text('OK'),
