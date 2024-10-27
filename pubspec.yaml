@@ -86,28 +86,28 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-assets:
-  - assets/images/
-  - assets/images/screen1.gif
-  - assets/images/screen2.gif
-  - assets/images/screen3.gif
-  - assets/images/screen4.gif
-  - assets/images/login.gif
-  - assets/images/background.jpg
-  - assets/images/welcome.jpg
-  - assets/images/logo.png
-  - assets/images/sample.jpg
-  - assets/images/loginsc.gif
-  - assets/images/splash/logo1.png
-  - assets/images/kumpas.png
-  - assets/images/splash/logo.png
-  - assets/images/fpassword.gif
-  - assets/images/otpgif.gif
-  - assets/images/team.gif
-  - assets/images/lugaw.png
-  - assets/images/sdbar1.gif
-  - assets/images/Fflogo.png
-  - assets/images/Fsidebar.gif
+  assets:
+    - assets/images/
+    - assets/images/screen1.gif
+    - assets/images/screen2.gif
+    - assets/images/screen3.gif
+    - assets/images/screen4.gif
+    - assets/images/login.gif
+    - assets/images/background.jpg
+    - assets/images/welcome.jpg
+    - assets/images/logo.png
+    - assets/images/sample.jpg
+    - assets/images/loginsc.gif
+    - assets/images/splash/logo1.png
+    - assets/images/kumpas.png
+    - assets/images/splash/logo.png
+    - assets/images/fpassword.gif
+    - assets/images/otpgif.gif
+    - assets/images/team.gif
+    - assets/images/lugaw.png
+    - assets/images/sdbar1.gif
+    - assets/images/Fflogo.png
+    - assets/images/Fsidebar.gif
   
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -150,7 +150,7 @@ flutter_native_splash:
   # of your splash screen to a solid color.  Use background_image to set the background of your
   # splash screen to a png image.  This is useful for gradients. The image will be stretch to the
   # size of the app. Only one parameter can be used, color and background_image cannot both be set.
-  color: "#42a5f5"
+  color: "##FFFFFF"
   #background_image: "assets/background.png"
 
   # Optional parameters are listed below.  To enable a parameter, uncomment the line by removing
@@ -158,7 +158,7 @@ flutter_native_splash:
 
   # The image parameter allows you to specify an image used in the splash screen.  It must be a
   # png file and should be sized for 4x pixel density.
-  #image: assets/splash.png
+  image: assets/images/Fflogo.png
 
   # The branding property allows you to specify an image used as branding in the splash screen.
   # It must be a png file. It is supported for Android, iOS and the Web.  For Android 12,
@@ -177,7 +177,7 @@ flutter_native_splash:
   # parameters from above. If the image_dark parameter is specified, color_dark or
   # background_image_dark must be specified.  color_dark and background_image_dark cannot both be
   # set.
-  #color_dark: "#042a49"
+  color_dark: "#FFFFFF"
   #background_image_dark: "assets/dark-background.png"
   #image_dark: assets/splash-invert.png
   #branding_dark: assets/dart_dark.png
@@ -195,10 +195,10 @@ flutter_native_splash:
     # 768 pixels in diameter.  To fit a 1152x1152 image within a circle with a 768 diameter, simply 
     # ensure that the most important design elements of your image are placed within a circular area
     # with a 768 diameter at the center of the 1152x1152 canvas.
-    #image: assets/android12splash.png
+    image: assets/images/Fflogo.png
 
     # Splash screen background color.
-    #color: "#42a5f5"
+    color: "#FFFFFF"
 
     # App icon background color.
     #icon_background_color: "#111111"
@@ -221,14 +221,14 @@ flutter_native_splash:
 
   # Platform specific images can be specified with the following parameters, which will override
   # the respective parameter.  You may specify all, selected, or none of these parameters:
-  #color_android: "#42a5f5"
-  #color_dark_android: "#042a49"
-  #color_ios: "#42a5f5"
-  #color_dark_ios: "#042a49"
-  #color_web: "#42a5f5"
-  #color_dark_web: "#042a49"
-  #image_android: assets/splash-android.png
-  #image_dark_android: assets/splash-invert-android.png
+  color_android: "#FCFBF4"
+  color_dark_android: "#FCFBF4"
+  color_ios: "#FCFBF4"
+  color_dark_ios: "#FCFBF4"
+  color_web: "#42a5f5"
+  color_dark_web: "#042a49"
+  image_android: assets/images/Fflogo.png
+  image_dark_android: assets/images/Fflogo.png
   #image_ios: assets/splash-ios.png
   #image_dark_ios: assets/splash-invert-ios.png
   #image_web: assets/splash-web.gif
@@ -290,5 +290,7 @@ flutter_launcher_icons:
   android: "launcher_icon"
   ios: "AppIcon"
   image_path: "assets/images/kumpas.png"
-  min_sdk_android: 12
+  min_sdk_android: 24
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/kumpas.png"
   remove_alpha_ios: true

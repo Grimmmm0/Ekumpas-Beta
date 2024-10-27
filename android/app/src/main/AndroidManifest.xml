@@ -3,9 +3,9 @@ xmlns:tools="http://schemas.android.com/tools">
 
 <uses-sdk tools:overrideLibrary="com.jrai.flutter_keyboard_visibility" />
     <application
-        android:label="ekumpas_beta"
+        android:label="E-Kumpas"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"
