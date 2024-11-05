@@ -26,6 +26,7 @@ class LandingPage extends StatefulWidget {
 
 class _LandingPageState extends State<LandingPage> {
   late String email = "";
+  late int userLevel = 1;
 
   @override
   void initState() {
@@ -36,16 +37,19 @@ class _LandingPageState extends State<LandingPage> {
   Future<void> _storeEmail() async {
     Map<String, dynamic> jwtDecodedToken = JwtDecoder.decode(widget.token);
     email = jwtDecodedToken['email'];
-
+    userLevel = jwtDecodedToken['level'];
+    
     // Save email to SharedPreferences
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('userEmail', email);
+    await prefs.setInt('userLevel', userLevel);
   }
 
   void logout() async {
     final prefs = await SharedPreferences.getInstance();
     prefs.remove('token');
     prefs.remove('userEmail');
+    prefs.remove('userLevel');
     Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(builder: (context) => const WelcomePage()),
@@ -78,7 +82,9 @@ class _LandingPageState extends State<LandingPage> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Home()),
+                   MaterialPageRoute(
+                      builder: (context) => Home(userLevel: userLevel),
+                    ),
                   );
                 },
               ),
