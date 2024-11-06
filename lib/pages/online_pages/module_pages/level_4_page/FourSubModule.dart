@@ -1,12 +1,8 @@
 // ignore_for_file: avoid_unnecessary_containers, sort_child_properties_last
 
-import 'package:ekumpas_beta/pages/online_pages/module_pages/level_1_page/level_1_categories_pages/alphabet_page/alphabet.dart';
-import 'package:ekumpas_beta/pages/online_pages/module_pages/level_1_page/level_1_categories_pages/commonwords_page/commonwords.dart';
-import 'package:ekumpas_beta/pages/online_pages/module_pages/level_1_page/level_1_categories_pages/greetings_page/greetings.dart';
-import 'package:ekumpas_beta/pages/online_pages/module_pages/level_1_page/level_1_categories_pages/questions_page/questions.dart';
-import 'package:ekumpas_beta/pages/online_pages/module_pages/level_1_page/level_1_categories_pages/survivalsigns_page/survivalsigns.dart';
 import 'package:flutter/material.dart';
 import 'package:ekumpas_beta/provider/provider.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:provider/provider.dart';
 
 class FourSubModulePage extends StatelessWidget {
@@ -37,14 +33,6 @@ class FourSubModulePage extends StatelessWidget {
             child: GridView(
               children: [
                 InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const AlphabetPage(),
-                      ),
-                    );
-                  },
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
@@ -54,46 +42,12 @@ class FourSubModulePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
-                          Icons.abc_rounded,
-                          size: 80,
-                          color: Colors.white,
-                        ),
-                        Text(
-                          "Alphabet",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const CommonWordsPage(),
-                      ),
-                    );
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: const Color.fromARGB(255, 18, 22, 60),
-                    ),
-                    child: const Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.chat_rounded,
+                          LucideIcons.handMetal,
                           size: 60,
                           color: Colors.white,
                         ),
                         Text(
-                          "Common",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                        Text(
-                          "Words",
+                          "FSL",
                           style: TextStyle(color: Colors.white),
                         ),
                       ],
@@ -101,14 +55,6 @@ class FourSubModulePage extends StatelessWidget {
                   ),
                 ),
                 InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const QuestionsPage(),
-                      ),
-                    );
-                  },
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
@@ -118,76 +64,78 @@ class FourSubModulePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
-                          Icons.question_mark,
-                          size: 80,
-                          color: Colors.white,
-                        ),
-                        Text(
-                          "Questions",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const GreetingsPage(),
-                      ),
-                    );
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: const Color.fromARGB(255, 18, 22, 60),
-                    ),
-                    child: const Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.safety_divider_rounded,
-                          size: 80,
-                          color: Colors.white,
-                        ),
-                        Text(
-                          "Greetings",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const SurvivalSignsPage(),
-                      ),
-                    );
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: const Color.fromARGB(255, 18, 22, 60),
-                    ),
-                    child: const Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.safety_check_rounded,
+                          LucideIcons.handMetal,
                           size: 60,
                           color: Colors.white,
                         ),
                         Text(
-                          "Survival",
+                          "FSL",
                           style: TextStyle(color: Colors.white),
                         ),
+                      ],
+                    ),
+                  ),
+                ),
+                InkWell(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: const Color.fromARGB(255, 18, 22, 60),
+                    ),
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          LucideIcons.handMetal,
+                          size: 60,
+                          color: Colors.white,
+                        ),
                         Text(
-                          "Signs",
+                          "FSL",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                InkWell(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: const Color.fromARGB(255, 18, 22, 60),
+                    ),
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          LucideIcons.handMetal,
+                          size: 60,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          "FSL",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                InkWell(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: const Color.fromARGB(255, 18, 22, 60),
+                    ),
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          LucideIcons.handMetal,
+                          size: 60,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          "FSL",
                           style: TextStyle(color: Colors.white),
                         ),
                       ],
