@@ -39,6 +39,36 @@ Navigate to the project directory and run:
 
 ```bash
 flutter pub get
+```
 
+### Set Up Environment Variables
 
+Configure any required environment variables or API keys in a `.env` file.
+
+### Run the App
+
+After setup, run the app on your preferred device or emulator:
+
+```bash
+flutter run
+```
+
+### 📖 Usage
+
+To start, simply enter any text, and watch it transform into animated Sign Language! Switch between online and offline modes seamlessly to access translations whenever you need them.
+
+### 🔄 Full Changelog
+
+For a detailed list of updates, improvements, and fixes, please refer to the Full Changelog.
+### 📝 License
+
+Distributed under the MIT License. See LICENSE for more information.
+
+### 📫 Contact and Feedback
+
+Your feedback is invaluable as we continue improving eKumpas. Please reach out with any issues or suggestions:
+
+- **GitHub Issues**: [Report an Issue](https://github.com/Grimmmm0/Ekumpas-Beta/issues)
+
+Stay tuned for updates as we refine and enhance eKumpas! Thank you for being part of our journey toward more inclusive communication.
 
