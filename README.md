@@ -1,16 +1,44 @@
-# ekumpas_beta
+# E-Kumpas - v1.0.0
 
-A new Flutter project.
+🎉 **Welcome to eKumpas - Beta Release (v1.0.0-beta)** 🎉
 
-## Getting Started
+We are excited to present **eKumpas**, a pioneering mobile app that makes text-based communication more accessible for the deaf and hard-of-hearing community. Built using **Flutter, Dart, Express, Node, MongoDB, and MongoDB Realm**, eKumpas brings Sign Language to life through smooth animations, allowing users to translate text into Sign Language gestures. This beta release invites you to explore, test, and help us improve the app before its official launch.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Key Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **🔠 Text to Sign Language Translation**  
+   Convert text into Sign Language with real-time, animated gestures that make understanding seamless and enjoyable.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **🎥 Smooth and Clear Animations**  
+   Designed for easy comprehension, each Sign Language gesture is presented through fluid, intuitive animations.
+
+- **🌐 Offline and Online Functionality**  
+   Use the app anytime, anywhere, with both online and offline support to ensure constant access to Sign Language translations.
+
+- **📱 User-Friendly Interface**  
+   With simplicity and accessibility at its core, eKumpas provides an intuitive experience suitable for users of all ages.
+
+## 💡 About the Project
+
+eKumpas was created to break down communication barriers for the deaf and hard-of-hearing. This app combines technology and accessibility to offer a resource that supports inclusive communication. Your feedback during this beta phase is crucial as we work to enhance and refine the app for a future full release.
+
+## 📋 Installation
+
+To run eKumpas locally:
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Grimmmm0/Ekumpas-Beta.git
+
+## 📋 Installation
+
+### Install Dependencies
+Navigate to the project directory and run:
+
+```bash
+flutter pub get
+
+
+
